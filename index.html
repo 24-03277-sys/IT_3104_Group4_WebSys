@@ -1,111 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Student Registration Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Activity Repository</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h1>Student Registration Form</h1>
+    <!-- Banner Header -->
+    <header>
+        <h1>Group 4 - IT 3104</h1>
+        <p>Napoleon II C. Hernandez • Dren Allen T. Managbanag • Enrico P. Sinchongco</p>
+    </header>
 
-    <form> 
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" >
-        <br><br>
-         
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <br><br>
-         
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age">
-        <br><br>
+    <!-- Main Content Area -->
+    <main>
         
-        <label>Gender:</label>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
-        <br><br>
-             
-        <label>Hobbies:</label>
-        <input type="checkbox" id="hobbie1" name="hobbie1" value="Reading">
-        <label for="hobbie1">Reading</label>
-        <input type="checkbox" id="hobbie2" name="hobbie2" value="Gaming">
-        <label for="hobbie2">Gaming</label>
-        <input type="checkbox" id="hobbie3" name="hobbie3" value="Music">
-        <label for="hobbie3">Music</label>
-        <br><br>
-             
-        <label for="course">Course</label>
-        <select id="course" name="course">
-            <option value="BSIT">BSIT</option>
-            <option value="BSCS">BSCS</option>
-        </select>
-
-        <button type="submit">Submit</button>
-    </form>
-
-    <hr>
-       
-    <h2>Favorite Foods</h2>
-    <ul>
-        <li>Pizza</li>
-        <li>Burger</li>
-        <li>Ice Cream</li>
-    </ul>
-      
-    <h2>Programming Languages</h2>
-    <ol>
-        <li>C++</li>
-        <li>Java</li>
-        <li>Python</li>
-    </ol>
+        <!-- Section: Current Module -->
+        <h2 class="section-title">Graded Laboratory Activities</h2>
+        <ul class="activity-list">
+            <li>
+                <span class="activity-info">
+                    <strong>Laboratory Activity 1</strong>
+                    <p>September 26, 2026</p>
+                </span>
+                <a href="index.html" class="btn">View Activity</a>
+            </li>
+        </ul>
         
-    <h2>Html Terms</h2>
-    <dl>
-        <dt>HTML</dt>
-        <dd>HyperText Markup Language</dd>
-        <dt>Tag</dt>
-        <dd>Used to create HTML elements</dd>
-        <dt>Element</dt>
-        <dd>A complete HTML structure consisting of tags and content.</dd>
-    </dl>
+        <!-- Section: Current Module -->
+        <h2 class="section-title">Practice Activities</h2>
+        <ul class="activity-list">
+            <li>
+                <span class="activity-info">
+                    <strong>Practice Activity 1: HTML</strong>
+                    <p>September 26, 2026</p>
+                </span>
+                <a href="pracact1.html" class="btn">View Activity</a>
+            </li>
+            <li>
+                <span class="activity-info">
+                    <strong>Practice Activity 2: CSS</strong>
+                    <p>September 26, 2026.</p>
+                </span>
+                <a href="css.html" class="btn">View Activity</a>
+            </li>
+        </ul>
 
-    <hr>
+        <!-- Section: Current Module -->
+        <h2 class="section-title">Class Hands-On Practice</h2>
+        <ul class="activity-list">
+            <li>
+                <span class="activity-info">
+                    <strong>HTML</strong>
+                    <p>September 12, 2026</p>
+                </span>
+                <a href="Practice1Html.html" class="btn">View Activity</a>
+            </li>
+            <li>
+                <span class="activity-info">
+                    <strong>HTML Aside</strong>
+                    <p>September 12, 2026</p>
+                </span>
+                <a href="Practice1Aside.html" class="btn">View Activity</a>
+            </li>
+            <li>
+                <span class="activity-info">
+                    <strong>HTML Forms</strong>
+                    <p>September 12, 2026</p>
+                </span>
+                <a href="PracticeActHtmlForms.html" class="btn">View Activity</a>
+            </li>
+        </ul>
 
-    <h2>Student Information</h2>
-    <table border="1">
-        <tr>
-            <th colspan="4">Student Information</th>
-        </tr>
-        <tr>
-            <th>Student ID</th>
-            <th>Name</th>
-            <th>Course</th>
-            <th>Year Level</th>
-        </tr>
-        <tr>
-            <td>2026-001</td>
-            <td>Juan Dela Cruz</td>
-            <td>BSIT</td>
-            <td>1st Year</td>
-        </tr>
-        <tr>
-            <td>2026-002</td>
-            <td>Maria Santos</td>
-            <td>BSCS</td>
-            <td>1st Year</td>
-        </tr>
-        <tr>
-            <td>2025-003</td>
-            <td>Ana Reyes</td>
-            <td>BSIT</td>
-            <td>2nd Year</td>
-        </tr>
-    </table>
-        
+    </main>
+
 </body>
-
 </html>
