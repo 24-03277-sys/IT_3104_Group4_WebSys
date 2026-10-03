@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Profile Portal - Napoleon Hernandez</title>
+</head>
+<body>
+
+<header>
+  <h1>Napoleon Hernandez's Student Profile Portal</h1>
+  <p>Welcome to my personal student profile and interactive data submission dashboard for BSIT-3104.</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">Profile</a>
+  <a href="#grades">Grades</a>
+  <a href="#form">Contact</a>
+</nav>
+
+<div class="layout">
+
+  <aside>
+    <h3>Quick Profile</h3>
+    <p><strong>Name:</strong> Napoleon Hernandez</p>
+    <p><strong>Section:</strong> BSIT-3104</p>
+    <p><strong>Course:</strong> BS Information Technology</p>
+    <p><strong>Note:</strong> This page was created for the HTML &amp; CSS practice activity.</p>
+  </aside>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm <span class="highlight">Napoleon Hernandez</span>, a student under
+        <b>BSIT-3104</b>. I am currently <i>learning web development</i> through HTML and CSS.
+        I would describe myself as <strong>hardworking</strong> and <em>curious</em> when it
+        comes to new technologies.
+      </p>
+      <hr>
+      <p>
+        My goal is to become a skilled <strong>web developer</strong> and continue improving
+        my <em>programming skills</em> throughout my IT course.
+      </p>
+    </section>
+
+    <section id="media">
+      <h2>Media &amp; Multimedia</h2>
+      <figure>
+        <img src="Sample student photo.png" alt="Sample student photo">
+        <figcaption>A placeholder image representing my student ID photo.</figcaption>
+      </figure>
+    </section>
+
+    <section id="lists">
+      <h2>Lists</h2>
+      <h3>My Hobbies (Unordered List)</h3>
+      <ul>
+        <li>Playing video games</li>
+        <li>Coding small projects</li>
+        <li>Watching movies</li>
+      </ul>
+
+      <h3>My Daily Routine (Ordered List)</h3>
+      <ol>
+        <li>Attend classes</li>
+        <li>Do assignments</li>
+        <li>Practice coding</li>
+      </ol>
+
+      <h3>Terms (Description List)</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Markup language used to structure web pages.</dd>
+        <dt>CSS</dt>
+        <dd>Style sheet language used to design web pages.</dd>
+        <dt>BSIT</dt>
+        <dd>Bachelor of Science in Information Technology.</dd>
+      </dl>
+    </section>
+
+    <section id="grades">
+      <h2>Academic Record</h2>
+
+      <h3>My Semester Grades</h3>
+      <table border="1">
+        <tr>
+          <th>Student</th>
+          <th>Subject</th>
+          <th>Units</th>
+          <th>Grade</th>
+        </tr>
+        <tr>
+          <td rowspan="3">Napoleon Hernandez</td>
+          <td>Web Systems and Technologies</td>
+          <td>3</td>
+          <td>1.5</td>
+        </tr>
+        <tr>
+          <td>Data Structures</td>
+          <td>3</td>
+          <td>1.75</td>
+        </tr>
+        <tr>
+          <td>Networking</td>
+          <td>3</td>
+          <td>1.5</td>
+        </tr>
+        <tr>
+          <td colspan="2">Total Units / GPA</td>
+          <td>9</td>
+          <td>1.58</td>
+        </tr>
+      </table>
+
+      <h3>Student Information Table</h3>
+      <table border="1">
+        <tr>
+          <th colspan="4">Student Information</th>
+        </tr>
+        <tr>
+          <th>Student ID</th>
+          <th>Name</th>
+          <th>Course</th>
+          <th>Year Level</th>
+        </tr>
+        <tr>
+          <td>2026-001</td>
+          <td>Juan Dela Cruz</td>
+          <td>BSIT</td>
+          <td>1st Year</td>
+        </tr>
+        <tr>
+          <td>2026-002</td>
+          <td>Maria Santos</td>
+          <td>BSCS</td>
+          <td>1st Year</td>
+        </tr>
+        <tr>
+          <td>2025-003</td>
+          <td>Ana Reyes</td>
+          <td>BSIT</td>
+          <td>2nd Year</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="form">
+      <h2>Registration / Feedback Form</h2>
+      <form action="#" method="POST">
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Juan Dela Cruz" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="juan@email.com" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="15" max="100">
+
+        <label for="phone">Telephone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="09XXXXXXXXX" title="Enter an 11-digit phone number">
+
+        <fieldset>
+          <legend>Gender</legend>
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Prefer not to say</label>
+        </fieldset>
+
+        <label for="track">Course Track</label>
+        <select id="track" name="track">
+          <optgroup label="Computer Science">
+            <option value="cs-software">Software Engineering</option>
+            <option value="cs-data">Data Science</option>
+          </optgroup>
+          <optgroup label="Information Technology">
+            <option value="it-network">Network Administration</option>
+            <option value="it-web">Web Development</option>
+          </optgroup>
+        </select>
+
+        <label for="language">Favorite Programming Language</label>
+        <input list="languages" id="language" name="language" placeholder="Start typing...">
+        <datalist id="languages">
+          <option value="JavaScript">
+          <option value="Python">
+          <option value="Java">
+          <option value="C#">
+        </datalist>
+
+        <fieldset>
+          <legend>Elective Choices</legend>
+          <label><input type="checkbox" name="electives" value="mobile"> Mobile Development</label>
+          <label><input type="checkbox" name="electives" value="ai"> Introduction to AI</label>
+          <label><input type="checkbox" name="electives" value="game"> Game Development</label>
+        </fieldset>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+
+        <label for="upload">Upload Requirement (optional)</label>
+        <input type="file" id="upload" name="upload">
+
+        <div class="btn-row">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Napoleon Hernandez - BSIT-3104</p>
+</footer>
+
+</body>
+</html>
