@@ -1,5 +1,5 @@
 function changeMessage() {
-  document.getElementById("message").textContent = "Hello! Thanks for visiting our page.";
+  document.getElementById("message").textContent = "Hello! Welcome to our webpage.";
 }
 
 function changeBackground() {
