@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+}
+
+.box {
+  border: 1px solid black;
+  padding: 30px 40px;
+  width: 400px;
+  text-align: center;
+  background: white;
+}
+
+h1 {
+  color: navy;
+  font-size: 28px;
+  margin: 0 0 20px;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+button {
+  background: navy;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
